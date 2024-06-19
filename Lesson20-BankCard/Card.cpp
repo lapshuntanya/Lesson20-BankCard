@@ -26,39 +26,48 @@ Card::~Card(){
 
 unsigned long Card::getCardNumber()
 {
-	return 0;
+	return cardNumber;
 }
 
 void Card::setName(const char* client)
 {
+	if (strlen(client) >= 3) {
+		strcpy_s(name, 50, client);
+	}
+	else
+		cout << "Error: name is too small\n";
 }
 
-const char* Card::getName()
-{
-	return nullptr;
+const char* Card::getName(){
+	return name;
 }
 
-void Card::setExpiredDate(const char* date)
-{
+void Card::setExpiredDate(const char* date){
+	int year = atoi(date + 3);
+	if (year > 24) {
+		strcpy_s(expiredDate, 6, date);
+	}
+	else
+		cout << "Error: date is past\n";
 }
 
-const char* Card::getExpiredDate()
-{
-	return nullptr;
+const char* Card::getExpiredDate(){
+	return expiredDate;
 }
 
-void Card::setPIN(int oldPIN, int newPIN)
-{
+void Card::setPIN(int oldPIN, int newPIN){
+	if (PIN == oldPIN) {
+		PIN = newPIN;
+	}
+	else 	cout << "Error: PIN is wrong\n";
 }
 
-int Card::getPIN()
-{
-	return 0;
+int Card::getPIN(){
+	return PIN;
 }
 
-double Card::getCash()
-{
-	return 0.0;
+double Card::getCash(){
+	return cash;
 }
 
 void Card::showInfo(){

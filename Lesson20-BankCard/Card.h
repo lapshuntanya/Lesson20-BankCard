@@ -19,16 +19,12 @@ public:
 
 	// --------- Аксесори --------
 	unsigned long getCardNumber();
-
 	void setName(const char* client);
 	const char* getName();
-
 	void setExpiredDate(const char* date);
 	const char* getExpiredDate();
-
 	void setPIN(int oldPIN, int newPIN);
 	int getPIN();
-
 	double getCash();
 
 	void showInfo();
