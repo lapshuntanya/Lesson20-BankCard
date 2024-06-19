@@ -6,7 +6,7 @@ using namespace std;
 class Card
 {
 private:
- 	long	cardNumber;		//Номер картки
+ 	unsigned long	cardNumber;		//Номер картки
 	char	name[50];		// Ім’я власника
 	char	expiredDate[6]; // Дата дії
 	int		PIN;			// Код картки
