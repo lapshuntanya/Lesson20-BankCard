@@ -25,6 +25,19 @@ int main()
 
     cout << "\n\n======================================\n";
 
+    cout << "Input  PIN: "; cin >> a;
+    cout << "Input  money: "; cin >> b;
+    mono->topupCash(a, b);
+    cout << "\nCard: " << mono->getCardNumber() << " cash: " << mono->getCash() << "\n";
+    cout << endl;
+
+    cout << "Input  PIN: "; cin >> a;
+    cout << "Input  money: "; cin >> b;
+    mono->withdrawCash(a, b);
+    cout << "\nCard: " << mono->getCardNumber() << " cash: " << mono->getCash() << "\n";
+
+    cout << "\n\n======================================\n";
+
     delete mono;
 }
 
