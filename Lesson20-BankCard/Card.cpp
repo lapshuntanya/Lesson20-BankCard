@@ -24,10 +24,7 @@ Card::~Card(){
 	cout << "Closed " << cardNumber << endl;
 }
 
-unsigned long Card::getCardNumber()
-{
-	return cardNumber;
-}
+unsigned long Card::getCardNumber(){	return cardNumber; }
 
 void Card::setName(const char* client)
 {
@@ -38,9 +35,7 @@ void Card::setName(const char* client)
 		cout << "Error: name is too small\n";
 }
 
-const char* Card::getName(){
-	return name;
-}
+const char* Card::getName(){	return name; }
 
 void Card::setExpiredDate(const char* date){
 	int year = atoi(date + 3);
