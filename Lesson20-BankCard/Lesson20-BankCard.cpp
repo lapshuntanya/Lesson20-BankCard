@@ -16,7 +16,14 @@ int main()
 
     mono->showInfo();
 
-    
+    cout << "\n\n======================================\n";
+    int a, b;
+    cout << "Input old PIN: "; cin >> a;
+    cout << "Input new PIN: "; cin >> b;
+    mono->setPIN(a, b);
+    cout << "\nCard: " << mono->getCardNumber() << " PIN: " << mono->getPIN() << "\n";
+
+    cout << "\n\n======================================\n";
 
     delete mono;
 }
