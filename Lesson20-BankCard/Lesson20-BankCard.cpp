@@ -1,7 +1,10 @@
 #include "Card.h"
+#include <ctime>
 
 int main()
 {
+    srand(time(0));
+
     Card* mono = nullptr;
 
     bool user;
@@ -12,6 +15,8 @@ int main()
     else mono = new Card("Lapshun Tetiana", 25'000);
 
     mono->showInfo();
+
+    
 
     delete mono;
 }

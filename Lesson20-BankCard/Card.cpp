@@ -24,6 +24,43 @@ Card::~Card(){
 	cout << "Closed " << cardNumber << endl;
 }
 
+unsigned long Card::getCardNumber()
+{
+	return 0;
+}
+
+void Card::setName(const char* client)
+{
+}
+
+const char* Card::getName()
+{
+	return nullptr;
+}
+
+void Card::setExpiredDate(const char* date)
+{
+}
+
+const char* Card::getExpiredDate()
+{
+	return nullptr;
+}
+
+void Card::setPIN(int oldPIN, int newPIN)
+{
+}
+
+int Card::getPIN()
+{
+	return 0;
+}
+
+double Card::getCash()
+{
+	return 0.0;
+}
+
 void Card::showInfo(){
 	cout << "+++++++++++++++++++++++++++++++++++++++++++\n";
 	cout << "|\tCard:   " << cardNumber << endl;
