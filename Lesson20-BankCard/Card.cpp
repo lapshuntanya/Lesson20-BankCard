@@ -2,7 +2,7 @@
 
 Card::Card()
 {
-	cardNumber = rand() + 10'000;
+	cardNumber = rand() * pow(10, 10) + rand();
 	strcpy_s(name, 50, "undefined");
 	strcpy_s(expiredDate, 6, "01.34");
 	PIN = rand() % 9000 + 1'000;
@@ -12,7 +12,7 @@ Card::Card()
 
 Card::Card(const char* name, double cash)
 {
-	cardNumber = rand() + 10'000;
+	cardNumber = rand() * pow(10, 10) + rand();
 	strcpy_s(this->name, 50, name); // !!!!!!!!!!!!
 	strcpy_s(expiredDate, 6, "01.34");
 	PIN = rand() % 9000 + 1'000;
