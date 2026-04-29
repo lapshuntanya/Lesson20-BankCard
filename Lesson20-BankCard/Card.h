@@ -29,7 +29,7 @@ public:
 
 	//------------- Інші методи ------- 
 	void showInfo();
-	void topupCash(int pin, double money); //Поповнення картки
-	void withdrawCash(int pin, double money); //Зняття коштів
+	bool topupCash(int pin, double money); //Поповнення картки
+	bool withdrawCash(int pin, double money); //Зняття коштів
 };
 
